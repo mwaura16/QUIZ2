@@ -1,0 +1,130 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: linear-gradient(135deg, #19485F, #D9E0A4);
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/*Quiz Container */
+.quiz-container {
+    max-width: 1800px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: #19485F;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #D9E0A4(0, 0 , 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #D9E0A4;
+}
+
+/* Question Section */
+.question {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+} 
+
+/* Answer Options */
+.answers label { 
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    text-align: center;
+}
+
+.answers input {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2 ease;
+}
+
+
+#submit-btn {
+          background: #74c69d;
+          color: white;
+}
+
+#submit-btn:hover {
+    background: #40916c;
+    transform: translateY(-2px);
+}
+
+#next-btn {
+   background: #5fa8d3;
+   color: white;
+}
+
+#next-btn:hover {
+     background: #468faf;
+     transform: translateY(-2px);
+}
+
+#timer {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+
+/* Score Display */
+.score {
+    font-size: 1.5rem;
+    color: #40916c;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .answers label {
+        font-size: 0.9rem;
+    }
+    
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@keyframes flash {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0.5;
+    }
+  }
+  
+  #timer {
+    transition: color 0.3s, font-weight 0.3s;
+  }
+  
