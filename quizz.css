@@ -4,8 +4,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #74ebd5, #acb6e5);
-    color: #333;
+    background: linear-gradient(135deg, #36454f, #febaad);
+    color:#36454f ;
     height: 100vh; /* Ensure the body spans the full height */
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ body {
   .quiz-container {
     width: 100%; /* Full width */
     height: 100vh; /* Full viewport height */
-    background: #fff;
+    background: #36454f;
     border-radius: 0; /* Remove rounded corners for fullscreen look */
     box-shadow: none; /* Optional: Remove shadow for clean fullscreen look */
     padding: 20px;
@@ -29,25 +29,28 @@ body {
   
     /* Heading */
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
       margin-bottom: 20px;
-      color: #333;
+      color: #febaad;
     }
 
     /* Question Section */
     .question {
-      font-size: 1.2rem;
+      font-size: 2rem;
       margin-bottom: 15px;
-      color: #555;
+      color: aqua;
+      font-family: cursive;
     }
 
     /* Answer Options */
     .answers label {
       display: block;
       margin: 10px 0;
-      font-size: 1rem;
-      text-align: left;
+      font-size: 1.5rem;
+      text-align: center;
       cursor: pointer;
+      color: #febaad;
+      font-family: cursive;
     }
 
     .answers input {
@@ -96,7 +99,7 @@ body {
     /* Score Display */
     .score {
       font-size: 1.5rem;
-      color: #4a4e69;
+      color: #43b3ae;
       font-weight: bold;
       margin-top: 20px;
     }
