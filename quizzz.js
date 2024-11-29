@@ -27,7 +27,7 @@ let timer;
 let timeLeft = 10;
 
 // DOM Elements
-const questionEl = document.querySelector(".question");
+const question = document.querySelector(".question");
 const answersEl = document.querySelector(".answers");
 const submitBtn = document.getElementById("submit-btn");
 const nextBtn = document.getElementById("next-btn");
